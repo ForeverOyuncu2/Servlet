@@ -8,9 +8,9 @@ public class ThirdServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String name = (String) req.getParameter("name");
-        if (name==null)
+        if (name == null)
             resp.getWriter().println("Java EE");
-        if (name!=null)
-            resp.getWriter().println("Hello "+name);
+        if (name != null)
+            resp.getWriter().println("Hello " + name);
     }
 }
